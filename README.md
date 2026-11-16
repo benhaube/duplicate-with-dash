@@ -27,8 +27,8 @@ Unfortunately, this behavior is hardcoded into KIO, meaning it cannot be changed
     mkdir -p ~/.local/share/kio/servicemenus/
     ```
 
-    > !note 
-    > If you are on an older KDE Plasma 5 release, use `~/.local/share/kservices5/ServiceMenus/` instead.
+> [!note] 
+> If you are on an older KDE Plasma 5 release, use `~/.local/share/kservices5/ServiceMenus/` instead.
 
 5. Create a new configuration file using a text editor like `nano`.
 

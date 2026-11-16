@@ -1,4 +1,9 @@
-# Duplicate with Dash
+<p align="center">
+    <img alt="Repository logo, colorized Lucide 'copy' icon" src="assets/logo.png" width="300" height="300">
+</p>
+<h1 align="center">
+    Duplicate with Dash
+</h1>
 
 First, before I criticize KDE Dolphin, let me just say I love KDE Plasma. I switched from GNOME to Plasma in 2021 after I reached my breaking point with the horrible workflow and the buggy extensions required to make it usable. 
 

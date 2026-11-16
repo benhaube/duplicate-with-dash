@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=all/allfiles;inode/directory;
+Actions=DuplicateDash
+X-KDE-Priority=TopLevel
+
+[Desktop Action DuplicateDash]
+Name=Duplicate with Dash
+Icon=edit-copy
+Exec=bash -c 'for f in "$@"; do d=$(dirname "$f"); b=$(basename "$f"); if [[ -d "$f" ]] || [[ "$b" != *.* ]] || [[ "$b" == .* && "$b" != *.*.* ]]; then cp -an "$f" "$d/$b-copy"; else n="${b%.*}"; e="${b##*.}"; cp -an "$f" "$d/$n-copy.$e"; fi; done' _ %F

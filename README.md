@@ -35,20 +35,20 @@ Unfortunately, this behavior is hardcoded into KIO, meaning it cannot be changed
 > [!note] 
 > If you are on an older KDE Plasma 5 release, use `~/.local/share/kservices5/ServiceMenus/` instead.
 
-6. Copy the file `duplicate-dash.desktop` into the `~/.local/share/kio/servicemenus` directory. This script preserves permissions and timestamps _(`cp -an`)_, avoids overwriting existing files, and intelligently handles file extensions, directories, and hidden files.
+5. Copy the file `duplicate-dash.desktop` into the `~/.local/share/kio/servicemenus` directory. This script preserves permissions and timestamps _(`cp -an`)_, avoids overwriting existing files, and intelligently handles file extensions, directories, and hidden files.
 
     ``` bash
     cp duplicate-dash.desktop ~/.local/share/kio/servicemenus
     ```
 
-7. Give the file execute permission.
+6. Give the file execute permission.
 
     ``` bash
     chmod +x ~/.local/share/kio/servicemenus/duplicate-dash.desktop
     ```
 
-8. Close all open Dolphin windows to force it to reload its context menus, then reopen Dolphin.
-9.  **Verification:** Right-click any file or directory in Dolphin. You will now see a **Duplicate with Dash** option in the context menu. Selecting it will generate a copy formatted as `file-name-copy.ext` without spaces.
+7. Close all open Dolphin windows to force it to reload its context menus, then reopen Dolphin.
+8.  **Verification:** Right-click any file or directory in Dolphin. You will now see a **Duplicate with Dash** option in the context menu. Selecting it will generate a copy formatted as `file-name-copy.ext` without spaces.
 
 <p align="center">
     <img alt="Screenshot of the KDE Plasma Dolphin right-click menu showing the new 'Duplicate with Dash' option" src="assets/right-click-menu.png">

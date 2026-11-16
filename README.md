@@ -35,12 +35,6 @@ Unfortunately, this behavior is hardcoded into KIO, meaning it cannot be changed
 > [!note] 
 > If you are on an older KDE Plasma 5 release, use `~/.local/share/kservices5/ServiceMenus/` instead.
 
-5. Create a new configuration file using a text editor like `nano`.
-
-    ``` bash
-    nano ~/.local/share/kio/servicemenus/duplicate-dash.desktop
-    ```
-
 6. Copy the file `duplicate-dash.desktop` into the `~/.local/share/kio/servicemenus` directory. This script preserves permissions and timestamps _(`cp -an`)_, avoids overwriting existing files, and intelligently handles file extensions, directories, and hidden files.
 
     ``` bash
